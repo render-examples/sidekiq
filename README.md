@@ -4,5 +4,8 @@ This repo is used to demo Ruby background workers on Render. It uses the [Sinatr
 
 
 ## Deployment
+Fork this repo and click the button below to try it out:
 
-Follow the guide at https://render.com/docs/deploy-sidekiq-worker.
+[![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://render.com/deploy)
+
+See the guide at https://render.com/docs/deploy-sidekiq-worker for more information.
