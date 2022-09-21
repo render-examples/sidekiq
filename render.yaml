@@ -5,6 +5,7 @@ services:
     region: ohio
     maxmemoryPolicy: noeviction
     ipAllowList: []
+    autoDeploy: false
 
   # Let's create our background worker
   - type: worker
@@ -13,6 +14,7 @@ services:
     region: ohio
     buildCommand: bundle install
     startCommand: bundle exec sidekiq -r ./main.rb
+    autoDeploy: false
     envVars:
       - key: REDIS_URL
         fromService:
@@ -27,6 +29,7 @@ services:
     region: ohio
     buildCommand: bundle install
     startCommand: bundle exec ruby main.rb
+    autoDeploy: false
     envVars:
       - key: REDIS_URL
         fromService:
