@@ -4,10 +4,12 @@ source "https://rubygems.org"
 
 git_source(:github) {|repo_name| "https://github.com/#{repo_name}" }
 
-# gem "rails"
+ruby '3.2.0'
 
-gem "sinatra", "~> 2.0"
+gem "sinatra", "~> 3"
 
-gem "redis", "~> 4.1"
+gem "redis", "~> 5"
 
-gem "sidekiq", "~> 5.2"
+gem "sidekiq", "~> 7"
+
+gem "puma", "~> 6"
