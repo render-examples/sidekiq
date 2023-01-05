@@ -11,3 +11,5 @@ gem "sinatra", "~> 3"
 gem "redis", "~> 5"
 
 gem "sidekiq", "~> 7"
+
+gem "puma", "~> 6"
