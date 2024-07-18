@@ -2,7 +2,6 @@ services:
   # Create a redis instance
   - type: redis
     name: sidekiq-redis
-    region: ohio
     maxmemoryPolicy: noeviction
     ipAllowList: []
 
@@ -10,7 +9,6 @@ services:
   - type: worker
     name: sidekiq-worker
     env: ruby
-    region: ohio
     buildCommand: bundle install
     startCommand: bundle exec sidekiq -r ./main.rb
     autoDeploy: false
@@ -25,7 +23,6 @@ services:
   - type: web
     name: sinatra-web
     env: ruby
-    region: ohio
     buildCommand: bundle install
     startCommand: bundle exec ruby main.rb
     autoDeploy: false
