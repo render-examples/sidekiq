@@ -33,7 +33,7 @@ __END__
 @@ layout
 <html>
   <head>
-    <title>Sinatra + Sidekiq</title>
+    <title>Sinatra + Sidekiq + Brucey Baby</title>
     <body>
       <%= yield %>
     </body>
