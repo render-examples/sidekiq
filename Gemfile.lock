@@ -1,6 +1,7 @@
 GEM
   remote: https://rubygems.org/
   specs:
+    base64 (0.3.0)
     concurrent-ruby (1.1.10)
     connection_pool (2.3.0)
     mustermann (3.0.0)
@@ -9,8 +10,9 @@ GEM
     puma (6.0.2)
       nio4r (~> 2.0)
     rack (2.2.5)
-    rack-protection (3.0.5)
-      rack
+    rack-protection (3.2.0)
+      base64 (>= 0.1.0)
+      rack (~> 2.2, >= 2.2.4)
     redis (5.0.5)
       redis-client (>= 0.9.0)
     redis-client (0.11.2)
@@ -21,10 +23,10 @@ GEM
       connection_pool (>= 2.3.0)
       rack (>= 2.2.4)
       redis-client (>= 0.11.0)
-    sinatra (3.0.5)
+    sinatra (3.2.0)
       mustermann (~> 3.0)
       rack (~> 2.2, >= 2.2.4)
-      rack-protection (= 3.0.5)
+      rack-protection (= 3.2.0)
       tilt (~> 2.0)
     tilt (2.0.11)
 
@@ -38,7 +40,7 @@ DEPENDENCIES
   sinatra (~> 3)
 
 RUBY VERSION
-   ruby 3.2.0p0
+   ruby 3.3.14p208
 
 BUNDLED WITH
-   2.4.1
+   2.5.23
